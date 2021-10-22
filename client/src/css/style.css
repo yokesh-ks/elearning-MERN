@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f9ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+#root {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Navbar starts */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    box-shadow: 0 0 15px 0 rgb(2 59 109 / 10%);
+}
+.navbar .navbar-left{
+    font-size: 24px;
+    color: #3DB2FF;
+}
+
+.navbar .navbar-right{
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.mobile-option {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+.navbar .navbar-right li{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.navbar .navbar-right li:hover{
+    color: #3DB2FF;
+}
+
+.login-btn {
+    border-radius: 12px;
+    border: 1px solid #3DB2FF;
+    padding: 8px 20px;
+    color: #3DB2FF;
+}
+.login-btn:hover{
+    color: white;
+    background-color:#3DB2FF;
+}
+.signup-btn {
+    padding: 8px 20px;
+    border-radius: 12px;
+    background: #3DB2FF;
+    color: white;
+}
+
+.signup-btn:hover{
+    border: 1px solid #3DB2FF;
+    color: #3DB2FF;
+    background: white;
+}
+
+  .mobile-menu {
+    display: none;
+  }
+
+@media screen and (max-width: 780px) {
+.navbar .navbar-right{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.navbar-right.active {
+    background-color: white;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+
+  .menu-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .menu-icon-x {
+    width: 22px;
+    height: 22px;
+  }
+  .navbar .navbar-right li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+  }
+
+  .mobile-menu {
+  display: block;
+}
+
+}
+
+
+
+/*-- hero in home page Starts --*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero .hero-content{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero .hero-content h1{
+    font-size: 48px;
+    font-weight: 700px;
+}
+
+.hero .hero-content p{
+    margin: 0;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero button{
+    margin-top: 50px;
+    padding: 8px 20px;
+    width: 150px;
+    border-radius: 12px;
+    background: #3DB2FF;
+    color: white;
+    border: none;
+}
+
+/* hero in home page Ends */
+
+/* form */
+
+.form {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #3DB2FF;
+}
+
+form label{
+ margin-bottom: 4px;
+}
+
+form input{
+    width: 350px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #3DB2FF;
+    background-color: White;
+}
+
+.form img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -5;
+    object-fit: cover;
+}
+
+form button {
+    text-align: center;
+    padding: 8px;
+    background-color: #3DB2FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+form textarea{
+    width: 350px;
+    height: 100px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #3DB2FF;
+    background-color: White;
+}
+
+/* Create start */
+
+.create {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.publish-button {
+    position: absolute;
+    margin-top: 600px;
+    width: 350px;
+}
+
+
+/* Youble link custom */
+.youtube-link {
+    width: 350px;
+}
+
+.youtube-link form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.youtube-link form input{
+    width: 290px;
+    height: 40px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.youtube-button {
+    width: 60px;
+    height: 40px;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.youtubeBox{
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.player {
+    position: absolute;
+    top: 0;
+  left: 0;
+  width: 100% !important;;
+  height: 100% !important;;
+}
+
+/* view Course */
+
+.view-course {
+    margin-top:40px;
+    display: grid;
+    gap: 40px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+
+.view-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgb(1 41 112 / 10%);
+}
+
+@media screen and (max-width: 900px) {
+    .view-course {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media screen and (max-width: 500px) {
+    .view-course {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
