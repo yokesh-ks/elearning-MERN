@@ -3,9 +3,8 @@ import { ReactComponent as CloseMenu } from "../images/x.svg";
 import { ReactComponent as MenuIcon } from "../images/menu.svg";
 import { Link } from "react-router-dom";
 import "../css/style.css";
-import { getByDisplayValue } from "@testing-library/dom";
 
-const Navbar = () => {
+const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -51,4 +50,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

@@ -1,4 +1,4 @@
-import "./css/style.css";
+import "../css/style.css";
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import axios from "axios";
