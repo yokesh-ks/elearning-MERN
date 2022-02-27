@@ -1,16 +1,16 @@
-import Navbar from "./Components/navbar";
-import Home from "./Home";
-import Login from "./login.js";
-import Register from "./register";
-import Viewcourse from "./viewcourse";
-import Create from "./create";
+import Header from "./Components/Header";
+import Home from "./screens/Home";
+import Login from "./screens/login.js";
+import Register from "./screens/register";
+import Viewcourse from "./screens/viewcourse";
+import Create from "./screens/create";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const user = true;
   return (
     <Router>
-      <Navbar></Navbar>
+      <Header />
       <Switch>
         <Route exact path="/">
           {user ? <Home /> : <Register />}

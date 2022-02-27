@@ -1,5 +1,5 @@
-import "./css/style.css";
-import loginbg from "./images/loginbg.jpg";
+import "../css/style.css";
+import loginbg from "../images/loginbg.jpg";
 import React, { useState } from "react";
 import axios from "axios";
 
