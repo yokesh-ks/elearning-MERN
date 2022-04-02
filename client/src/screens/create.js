@@ -61,7 +61,7 @@ function Create() {
   };
 
   return (
-    <div class="create">
+    <div className="create">
       <form>
         <h1>Create Course</h1>
         <label>Title</label>
