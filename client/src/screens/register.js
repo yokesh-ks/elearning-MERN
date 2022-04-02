@@ -40,7 +40,7 @@ function Register() {
   }
 
   return (
-    <div class="form">
+    <div className="form">
       <form>
         <h1>Register</h1>
         <label>Username</label>
